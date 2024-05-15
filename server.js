@@ -23,6 +23,10 @@ app.get('/upgrades.json', (req, res) => {
   res.sendFile(path.join(__dirname, 'upgrades.json'));
 });
 
+app.get('/style.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'style.css'));
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
