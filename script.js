@@ -14,7 +14,7 @@ console.log('autoClickUpgradesElement:', autoClickUpgradesElement);
 console.log('userClickUpgradesElement:', userClickUpgradesElement);
 
 // Load upgrades from JSON file
-fetch('http://localhost:3000/upgrades.json')
+fetch(`${process.env.NEXT_PUBLIC_API_URL}/upgrades.json`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
