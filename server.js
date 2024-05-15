@@ -15,12 +15,12 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'app')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'app', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Route to serve upgrades.json
 app.get('/upgrades.json', (req, res) => {
-  res.sendFile(path.join(__dirname, 'app', 'upgrades.json'));
+  res.sendFile(path.join(__dirname, 'upgrades.json'));
 });
 
 app.listen(port, () => {
