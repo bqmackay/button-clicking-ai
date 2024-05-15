@@ -1,0 +1,10 @@
+{
+    "auto-click-upgrades": [
+        { "name": "Auto Clicker 1", "cost": 10, "value": 1 },
+        { "name": "Auto Clicker 2", "cost": 100, "value": 5 }
+    ],
+    "user-click-upgrades": [
+        { "name": "Double Click", "cost": 50, "value": 2 },
+        { "name": "Triple Click", "cost": 200, "value": 3 }
+    ]
+}
