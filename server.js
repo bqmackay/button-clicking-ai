@@ -27,6 +27,10 @@ app.get('/style.css', (req, res) => {
   res.sendFile(path.join(__dirname, 'style.css'));
 });
 
+app.get('/script.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'script.js'));
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
